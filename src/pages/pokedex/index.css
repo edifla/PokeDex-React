@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: red;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pokedex{
+    background-color: rgb(22, 22, 22);
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    margin-top: 15px;
+}
+.container-esquerdo{
+    background-color: #171E22;
+    max-height: 100%;
+    width: 30%;
+    overflow: auto;
+    color: white;
+}
+.container-esquerdo h1{
+    border-bottom: 1px solid white ;
+    text-align: center;
+    margin: 0 30px;
+    padding: 10px 0;
+}
+.lista-Pokemon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    padding-top: 10px;
+}
+.item{
+    text-align: center;
+    background-color: #273138;
+}
+.item img{
+    width: 70px;
+}
+/* Lado direito */
+.container-direito{
+    color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: auto;
+    max-height: 100%;
+}
+.juncao{
+    display: flex; 
+    margin: 30px 0;
+}
+.display{
+    width: 250px;
+    height: 90%;
+    background: url('../../imgs/backCard.jpg');
+    background-size: cover;
+    margin: 0 20px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.imagem img{
+    width: 200px;
+    padding: 50px 0;
+}
+.status2{
+    display: grid;
+    grid-template-columns: 170px 170px;
+    background-color: white;
+    opacity: .6;
+    color: black;
+    height: 50%;
+    width: 100%;
+}
+.status2 h2{
+    font-size: 15px;
+    padding:15px 10px;
+}
+.types{
+    display: inline;
+    width: auto;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 1px;
+    font-size: 10px;
+    color: white;
+}
+.status{
+    width: 100px;
+    height: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: black;
+    background-color: #273138;
+    border-radius: 10px;
+}
+.status h1{
+    font-size: 18px;
+    color: white;
+}
+.status-item{
+    color:white;
+    border-radius: 10px;
+    width: 70px;
+}
+.status-item.hp{
+    background-color: #552C34;
+}
+.status-item.atk{
+    background-color: #553624;
+}
+.status-item.spatk{
+    background-color: #1C3C63;
+}
+.status-item.def{
+    background-color: #5B5420;
+}
+.status-item.spdef{
+    background-color: #2D5026;
+}
+.status-item.spe{
+    background-color: #52293B   ;
+}
+.status-item p{
+    font-size: 15px;
+}
+.status-item p:first-of-type{
+    border-bottom: 1px solid black;
+    margin: 5px 20px;
+}
+
+.description-container{
+    height: auto;
+    width:500px;
+    margin: 30px 10px 0;
+    overflow: auto;
+}
+
+.description{
+    width:100%;
+    background-color: #273138;
+    word-wrap: break-word;
+    padding-bottom: 10px;
+}
+.tittle{
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(207, 200, 200, 0.534);
+    margin: 5px 20px;
+    padding: 10px 0;
+}
+.description p{
+    padding: 10px 20px;
+    margin: 0 20px;
+    background-color:rgba(14, 7, 7, 0.63);
+    border-radius: 10px;
+    font-size:12px;
+}
+.abilities{
+    width:100%;
+    background-color: #273138;
+    word-wrap: break-word;
+    padding-bottom: 30px;
+}
+.ability{
+    margin: 0 20px;
+    border-radius: 10px;
+    font-size:12px;
+}
+
+.ability p{
+    padding: 10px 20px;
+    margin: 0 20px;
+    background-color: rgba(14, 7, 7, 0.63);
+    border-radius: 10px;
+    font-size:12px;
+}
+.tittle-ab{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(207, 200, 200, 0.534);
+    padding: 10px 0;
+    margin: 5px 20px;
+}
+.tittle-ab h1{
+    display: inline;
+    font-size: 20px;
+    color: rgb(188,188, 214);
+}
+
+.evo-chain{
+    width:100%;
+    background-color: #273138;
+    padding-bottom: 30px;
+    margin:auto;
+}
