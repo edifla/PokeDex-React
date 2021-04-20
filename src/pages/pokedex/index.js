@@ -207,9 +207,7 @@ export default function Pokedex() {
 
                         </div>
                     </div>
-                    <div className="evo-chain">
-                            <h1 className="tittle">Evolution Chain</h1>
-                    </div>
+                    
                 </div>
             </div>
         </>
